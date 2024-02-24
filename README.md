@@ -5,7 +5,9 @@ The program is written in Python. The neccasary comments are provided. Please fe
 
 The program starts here.-
 
+
 #========================== TASK1 ==============================
+
 train_up_time = [9,11,13,15]
 train_down_time = [10,12,14,16]
 train_up_ticket =[480]*4
@@ -22,7 +24,10 @@ def setup_screen():
                 print(train_up_time[ i ], "\t\t\t", train_up_ticket[ i ], "\t\t\t",  train_up_passenger[ i ],"\t\t\t",train_up_money[ i ])
                 print(train_down_time[ i ], "\t\t\t", train_down_ticket[ i ], "\t\t\t", train_down_passenger[ i ],"\t\t\t", train_down_money[ i ])
 setup_screen()
+
+
 #========================== TASK2 ===============================================
+
 cost = 25.00
 index_up = 0
 index_down = 0
@@ -80,7 +85,10 @@ while selling_ticket == 1:
         train_up_passenger[ index_up ] = train_up_passenger[ index_up ] + num_ticket
         setup_screen()
         selling_ticket = int(input("Would you like buy ticket for the trip ? Enter 1 otherwise enter -1 to close the system.  :  " ))
+
+        
 #========================== TASK3 ==================================================================
+
 highest_passenger_time = 0
 highest_passenger  = 0
 passenger_up = [ 0 ]*4
